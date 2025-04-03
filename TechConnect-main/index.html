@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="img/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1>TechConnect Summit</h1>
+            <p><strong>Data:</strong> 28 de Março de 2025 tecnologia.</p>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#Sobre-Evento">Sobre Evento</a></li>
+                    <li><a href="#Participantes">Participantes</a></li>
+                    <li><a href="#Inscricao">Inscrição</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="Sobre-Evento">
+            <div class="details-event">
+                <h2>Sobre o Evento:</h2>
+                <div class="ddt">
+                    <p><strong>Local:</strong></p>
+                    <!--Gostaria de deixar aqui o memórial ao resumo, foi bom enquanto durou a tentativa de colocar as divs e também o sistema de texto funcionar um do lado do outro-->
+
+                <p id="about1">
+                    O TechFuture Summit 2025 será o maior evento de tecnologia e inovação deste ano.
+                    Junte-se a nós para explorar, nesta reunião contaremos com a presença de vários
+                    desenvolvedores, designers e outros entusiastas da tecnologia.
+                    O local será no Centro De Convenções de Salvador as 13:00 a 18:00, tendo 3 nomes renomados como
+                    participantes,
+                    além de workshops e protótipos abertos para o uso do público.
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="ddt">
+                <p><strong>Resumo:</strong></p>
+                <!--Gostaria de deixar aqui o memórial ao resumo, foi bom enquanto durou a tentativa de colocar as divs e também o sistema de texto funcionar um do lado do outro-->
+
+            <p id="about1">
+                O TechFuture Summit 2025 é o maior evento de inovação e tecnologia do ano, reunindo mentes brilhantes e líderes da indústria para explorar o futuro da tecnologia. 
+                Este evento exclusivo contará com palestras inspiradoras, painéis de discussão e workshops interativos, proporcionando uma experiência única para desenvolvedores, 
+                designers, empreendedores e entusiastas da tecnologia.Não perca a oportunidade de fazer parte deste evento transformador e explorar o futuro da tecnologia com os maiores 
+                nomes da indústria!
+            </p>
+            </div>
+            </div>
+        </section>
+        <section class="sobre">
+            <div class="participante" id="Participantes">
+                <h2>Convidados:</h2>
+                <div class="fotos">
+
+                    <div class="info-participante">
+                        <div class="flashcard">
+                            <div class="front">
+                                <img src="img/Rafaella.png" alt="Rafaella Ballerini">
+                            </div>
+                            <div class="back">
+                                <h3>Rafaella Ballerini</h3>
+                                <p>Desenvolvedora de software, instrutora e criadora de conteúdo em HTML, CSS,
+                                    Javascript, Git, Github...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-participante">
+                        <div class="flashcard">
+                            <div class="front">
+                                <img src="img/Mateus.png" alt="Mateus Silva">
+                            </div>
+                            <div class="back">
+                                <h3>Mateus Silva</h3>
+                                <p>Dev há 16 anos construindo a melhor escola de tecnologia do país, Fundador do Projeto
+                                    JStack</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-participante">
+                        <div class="flashcard">
+                            <div class="front">
+                                <img src="img/Filipe.png" alt="Filipe Deschamps">
+                            </div>
+                            <div class="back">
+                                <h3>Filipe DesChamps</h3>
+                                <p>Desenvolvedor full-stack, mobile, designer e instrutor de conteúdos nas mídias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Inscricao">
+            <form>
+                <fieldset>
+                    <legend><h4>Inscrição:</h4></legend>
+                    <div id="nome-email">
+                        <label for="nome">Nome Completo</label>
+                        <input id="nome" type="text" placeholder="Digite seu nome:" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required placeholder="Digite seu E-mail:" required>
+
+                    </div>
+                    <div class="marcacoes">
+                        <label for="Presencial">Presencial</label>
+                        <input id="Presencial" name="tipo" type="radio" required>
+                        <br>
+                        <br>
+                        <label for="Online">Online</label>
+                        <input id="Online" name="tipo" type="radio" required>
+                        <br>
+                        <div class="TermoDeServ">
+                            <label for="termos">Eu concordo com os Termos</label>
+                            <input id="termos" type="checkbox" required> <br>
+                            <a href="#" id="TermoDeServico" onclick="mostraTermos()">Leia os termos de serviço</a>
+                        </div>
+                        <div class="modal" id="modal-termos">
+                            <div class="modal-content">
+                                <span class="close" onclick="fechaTermo()">&times;</span>
+                                <h2 style="color: #000000;">Termos de Serviço:</h2>
+                                <hr />
+                                <p>Pelo presente instrumento particular, denominado TERMO DE CONSENTIMENTO, de um lado a empresa TECHCONECT TECNOLOGIA LTDA, pessoa jurídica de direito privado, inscrita no CNPJ sob nº 00.000.000/0000-00, estabelecida na Avenida Inovação, nº 1234, Bairro Tecnologia, Cidade Futurista, Estado do Avanço, neste ato representada na forma de seus atos constitutivos, doravante denominada "TECHCONECT", e de outro lado, o(a) participante que voluntariamente aceita os termos e condições a seguir estabelecidos, denominado(a) "PARTICIPANTE".
+
+                                    1. OBJETO DO TERMO
+                                    
+                                    1.1. O presente termo tem por objeto estabelecer as diretrizes e condições para a participação do(a) PARTICIPANTE na apresentação corporativa promovida pela TECHCONECT, evento destinado à demonstração de produtos, serviços e inovações tecnológicas, bem como à exposição de conteúdos técnicos voltados à comunidade de programadores e demais profissionais da área de tecnologia da informação.
+                                    
+                                    1.2. A participação do(a) PARTICIPANTE é voluntária, não havendo qualquer imposição, remuneração ou vínculo empregatício decorrente da adesão ao presente termo.
+                                    
+                                    2. DADOS PESSOAIS E USO DE IMAGEM
+                                    
+                                    2.1. O(a) PARTICIPANTE, ao assinar o presente termo, concorda expressamente que a TECHCONECT poderá coletar, armazenar, processar e utilizar seus dados pessoais, incluindo, mas não se limitando a, nome completo, e-mail, telefone, cargo e empresa, para fins de organização, comunicação e registro do evento.
+                                    
+                                    2.2. O(a) PARTICIPANTE autoriza o uso de sua imagem, voz e declarações eventualmente captadas durante a apresentação, permitindo que a TECHCONECT utilize tais materiais em mídias sociais, websites institucionais, campanhas promocionais e demais meios de comunicação, sem que isso gere qualquer tipo de compensação financeira ou obrigação de qualquer espécie para a TECHCONECT.
+                                    
+                                    3. CONFIDENCIALIDADE E DIREITOS INTELECTUAIS
+                                    
+                                    3.1. O(a) PARTICIPANTE reconhece que poderá ter acesso a informações sigilosas, estratégicas e/ou proprietárias da TECHCONECT durante a apresentação, comprometendo-se a não divulgar, reproduzir, compartilhar ou utilizar tais informações para qualquer finalidade diversa daquela expressamente autorizada pela empresa.
+                                    
+                                    3.2. Toda e qualquer tecnologia, código-fonte, software, metodologia ou conceito técnico apresentado durante o evento é de propriedade exclusiva da TECHCONECT e/ou de seus parceiros, estando vedada sua reprodução ou utilização sem a prévia autorização expressa e por escrito da empresa.
+                                    
+                                    3.3. Caso o(a) PARTICIPANTE compartilhe ideias, sugestões ou comentários técnicos durante a apresentação, ele(a) concede automaticamente à TECHCONECT uma licença irrevogável, perpétua e livre de royalties para utilizar, modificar, distribuir ou comercializar tais contribuições sem necessidade de aviso prévio ou compensação.
+                                    
+                                    4. RESPONSABILIDADES DO PARTICIPANTE
+                                    
+                                    4.1. O(a) PARTICIPANTE se compromete a manter uma conduta ética e respeitosa durante a apresentação, abstendo-se de qualquer comportamento inadequado, ofensivo ou que possa comprometer a ordem e a integridade do evento.
+                                    
+                                    4.2. O(a) PARTICIPANTE reconhece que o acesso a determinados conteúdos ou tecnologias poderá estar sujeito a restrições de segurança ou regulatórias e que, caso necessário, poderá ser exigida a assinatura de termos adicionais para acesso a informações mais sensíveis.
+                                    
+                                    4.3. O não cumprimento das diretrizes estabelecidas neste termo poderá resultar na exclusão imediata do(a) PARTICIPANTE do evento, sem prejuízo de eventuais sanções legais cabíveis.
+                                    
+                                    5. DISPOSIÇÕES GERAIS
+                                    
+                                    5.1. O presente termo possui caráter irrevogável e irretratável, obrigando as partes aos seus termos.
+                                    
+                                    5.2. A TECHCONECT se reserva o direito de modificar, suspender ou cancelar a apresentação a qualquer momento, sem necessidade de aviso prévio, por motivos de força maior, razões técnicas ou qualquer outro fator que inviabilize sua realização.
+                                    
+                                    5.3. Qualquer questão não prevista neste termo será resolvida à luz das disposições legais aplicáveis e dos princípios gerais do direito.
+                                    
+                                    5.4. O(a) PARTICIPANTE declara que leu, compreendeu e aceita integralmente os termos e condições aqui estabelecidos, declarando, ainda, estar ciente de que a participação na apresentação implica aceitação plena deste termo.
+                                    
+                                    E, por estarem de comum acordo, firma-se o presente instrumento para que produza seus efeitos legais.
+                                </p>
+                                <hr />
+                            </div>
+                        </div>
+                        <br>
+                        <span id="botão-center">
+                            <input id="enviar" type="submit" value="Enviar">
+                        </span>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <br>
+
+    <footer class="footer">
+        <div><p href="#">Política de Privacidade</p></div>
+        <div>
+            <p>&copy; 2025 - TechConnect</p>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
